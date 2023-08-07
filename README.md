@@ -32,9 +32,9 @@
 ```
 
 ### Preprocessing
-  * You could get 'output.json' file
+* You could get 'output.json' file
+* Get down our file and run it your '/content' directory
 ```python
-!gdown 
 !python preprocessing.py
 ```
 
