@@ -35,9 +35,11 @@
 
 ### Preprocessing
 * You could get 'output.json' file
-* Get down our file and run it in your '/content' directory
+* If else, get down our file and run it in your '/content' directory
 ```python
+%cd /content
 !git clone https://github.com/pimang62/dacon-multimodal-vqa.git
+
 %cd /content/dacon-multimodal-vqa
 !python preprocessing.py
 ```
