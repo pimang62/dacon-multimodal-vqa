@@ -69,7 +69,7 @@
     --gradient_accumulation_steps 16 \
     --evaluation_strategy "no" \
     --save_strategy "steps" \
-    --save_steps 250 \
+    --save_steps 2400 \
     --save_total_limit 1 \
     --learning_rate 2e-3 \
     --weight_decay 0. \
@@ -99,7 +99,7 @@
     --mm_vision_select_layer -2 \
     --mm_use_im_start_end \
     --bf16 True \
-    --output_dir /content/drive/MyDrive/llava/checkpoint-250 \
+    --output_dir /content/drive/MyDrive/llava/checkpoint-2400 \
     --num_train_epochs 2 \
     --per_device_train_batch_size 16 \
     --per_device_eval_batch_size 4 \
@@ -136,7 +136,7 @@ drive.mount('/content/drive')
 ```python
 %cd /content/LLaVA
 !python3 /content/LLaVA/llava/eval/model_vqa.py \
-    --model-path /content/drive/MyDrive/llava/checkpoint/llava-250 \
+    --model-path /content/drive/MyDrive/llava/checkpoint/llava-2400 \
     --model-base lmsys/vicuna-7b-v1.3 \
     --question-file \
     /content/test.jsonl \
