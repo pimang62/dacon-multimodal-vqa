@@ -86,7 +86,7 @@ def eval_model(args):
 
         ans_id = shortuuid.uuid()
         ans_file.write(json.dumps({"question_id": idx,
-                                   "text": outputs}) + "\n")
+                                   "text": outputs}) + "\n")    # edit
         ans_file.flush()
     ans_file.close()
 
