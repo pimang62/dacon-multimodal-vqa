@@ -4,7 +4,9 @@
 
 ## 2. Data
 
-## 3. Setup in colab
+## 3. Setup
+* In colab only
+* Set up GPU A100 only
 
 ### Clone LLaVA
 ```python
