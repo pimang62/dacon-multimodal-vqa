@@ -133,7 +133,7 @@ from google.colab import drive
 drive.mount('/content/drive')
 ```
 
-* You should change output_dir 'checkpoint-*' to **'llava-*"**
+* You should change output_dir 'checkpoint-*' to 'llava-*"
   * May be you might get a difference whether the name contains 'llava' or not
 
 ```python
