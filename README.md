@@ -34,55 +34,8 @@
 ### Preprocessing
   * You could get 'output.json' file
 ```python
-# unzip
-import zipfile
-import os
-
-
-zip_file_path = '/content/LLaVA/open.zip'
-
-extracted_folder = '/content/'
-
-def extract_zip(zip_file, extract_to):
-    with zipfile.ZipFile(zip_file, 'r') as zip_ref:
-        zip_ref.extractall(extract_to)
-try:
-    extract_zip(zip_file_path, extracted_folder)
-    print(f"압축 파일을 성공적으로 해제하였습니다. 경로: {extracted_folder}")
-except Exception as e:
-    print(f"압축 파일 해제 중 오류가 발생하였습니다: {e}")
-
-
-
-# make 'output.json'
-import csv
-import json
-
-with open('/content/data/train.csv', 'r') as f:
-    reader = csv.reader(f)
-    next(reader)
-    data = list(reader)
-
-json_data = []
-for row in data:
-    id, image_id, question, answer = row
-    json_data.append({
-        "id": id,
-        "image": "/content/data/image/train/" + image_id + ".jpg",
-        "conversations": [
-            {
-                "from": "human",
-                "value": "<image>\n" + question
-            },
-            {
-                "from": "gpt",
-                "value": answer
-            }
-        ]
-    })
-
-with open('output.json', 'w') as f:
-    json.dump(json_data, f, indent=4)
+!gdown 
+!python preprocessing.py
 ```
 
 ## 4. Run
@@ -130,6 +83,7 @@ with open('output.json', 'w') as f:
 ## 5. Re-training
 * You should put your model-name to 'vicuna'
 * output_dir name should be contained 'checkpoint-*'
+* num_train_epochs must have started from 2
 ```python
 !python /content/LLaVA/llava/train/train_mem.py \
     --model_name_or_path /content/LLaVA/vicuna-7b-v1.3 \
