@@ -13,7 +13,7 @@
 %cd /content/LLaVA
 ```
 
-* Install
+### Install
 ```
 !pip install --upgrade pip
 !pip install -e .
@@ -21,28 +21,28 @@
 !pip install flash-attn --no-build-isolation
 ```
 
-* Vicuna clone
+### Vicuna clone
 ```
 !git clone https://huggingface.co/lmsys/vicuna-7b-v1.3
 ```
 
-* Download Data
+### Download Data
 ```
 # Download directly
 !gdown https://drive.google.com/u/0/uc?id=1a9XB3r83ZCFWLOHBp8ooz3zQFl9rEIei&export=download
 ```
 
-* Pre-processing
+### Pre-processing
   * You could get output.json file
 ```
 !python preprocessing.py
 ```
 
-### 4. Train
+## 4. Train
 *
 
-### 5. Re-training
+## 5. Re-training
 
 
-### 6. Inference
+## 6. Inference
 
