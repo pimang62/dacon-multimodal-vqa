@@ -45,7 +45,7 @@
 ```
 
 ## 4. Run
-* Record wandb
+* For recording wandb
   * put your API
 ```python
 %cd /content/LLaVA
