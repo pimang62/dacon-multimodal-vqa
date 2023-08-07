@@ -33,13 +33,16 @@
 ```
 
 * Pre-processing
+  * You could get output.json file
+```
+!python preprocessing.py
 ```
 
-```
+### 4. Train
+*
 
-### 4. Edit
+### 5. Re-training
 
-### 5. Train
 
 ### 6. Inference
 
