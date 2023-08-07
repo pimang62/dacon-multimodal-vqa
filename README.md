@@ -134,7 +134,7 @@ drive.mount('/content/drive')
 ```python
 %cd /content/LLaVA
 !python3 /content/LLaVA/llava/eval/model_vqa.py \
-    --model-path /content/drive/MyDrive/llava/checkpoint/checkpoint-1epoch \
+    --model-path /content/drive/MyDrive/llava/checkpoint/llava-250 \
     --model-base lmsys/vicuna-7b-v1.3 \
     --question-file \
     /content/test.jsonl \
