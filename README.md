@@ -5,7 +5,7 @@
 ## 2. Data
 
 ## 3. Setup
-!In Colab only
+#### In Colab only
 
 ### Clone LLaVA
 ```python
