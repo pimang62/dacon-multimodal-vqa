@@ -6,7 +6,7 @@
 
 ## 3. Setup
 
-### LLaVA clone
+### Clone LLaVA
 ```python
 !git clone https://github.com/haotian-liu/LLaVA.git
 %cd /content/LLaVA
@@ -20,7 +20,7 @@
 !pip install flash-attn --no-build-isolation
 ```
 
-### Vicuna clone
+### Clone Vicuna
 ```python
 !git clone https://huggingface.co/lmsys/vicuna-7b-v1.3
 ```
