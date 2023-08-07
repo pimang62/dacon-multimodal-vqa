@@ -151,6 +151,6 @@ drive.mount('/content/drive')
 
 ## Submission
 ```python
-%cd /content
+%cd /content/dacon-multimodal-vqa
 !python submission.py
 ```
