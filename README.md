@@ -1,4 +1,5 @@
 # 월간 데이콘 이미지 기반 질의 응답 AI 경진대회
+<img width="502" alt="image" src="https://github.com/pimang62/dacon-multimodal-vqa/assets/121668884/ed1b318f-f6c6-41db-adba-504f16e15b64">
 
 ## 1. Introduction
 
