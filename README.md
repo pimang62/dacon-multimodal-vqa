@@ -5,7 +5,7 @@
 ## 2. Data
 
 ## 3. Setup
-* In Colab-PRO or + Users only
+* In Colab-PRO or PRO+ Users only
 * Set up for sure GPU A100
 
 ### Clone LLaVA
@@ -88,8 +88,8 @@
 
 ## 5. Re-training
 * You should put 'vicuna' to your model-name
-* output_dir name should be contained 'checkpoint-*'
-* num_train_epochs must have started from 2
+* output_dir name should be contained **'checkpoint-*'**
+* num_train_epochs must have started from **2**
 
 ```python
 !python /content/LLaVA/llava/train/train_mem.py \
@@ -133,7 +133,7 @@ from google.colab import drive
 drive.mount('/content/drive')
 ```
 
-* You should change output_dir 'checkpoint-*' to 'llava-*"
+* You should change output_dir 'checkpoint-*' to **'llava-*"**
   * May be you might get a difference whether the name contains 'llava' or not
 
 ```python
