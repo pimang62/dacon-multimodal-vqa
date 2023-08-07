@@ -142,7 +142,7 @@ drive.mount('/content/drive')
     --model-path /content/drive/MyDrive/llava/checkpoint/llava-2400 \
     --model-base lmsys/vicuna-7b-v1.3 \
     --question-file \
-    /content/test.jsonl \
+    /content/dacon-multimodal-vqa/test.jsonl \
     --image-folder \
    /content/image/test \
     --answers-file \
