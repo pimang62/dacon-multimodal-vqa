@@ -13,7 +13,7 @@
 ```
 
 ### Install
-```
+```python
 !pip install --upgrade pip
 !pip install -e .
 !pip install ninja
@@ -21,19 +21,19 @@
 ```
 
 ### Vicuna clone
-```
+```python
 !git clone https://huggingface.co/lmsys/vicuna-7b-v1.3
 ```
 
 ### Download Data
-```
+```python
 # Download directly
 !gdown https://drive.google.com/u/0/uc?id=1a9XB3r83ZCFWLOHBp8ooz3zQFl9rEIei&export=download
 ```
 
 ### Preprocessing
   * You could get 'output.json' file
-```
+```python
 # unzip
 import zipfile
 import os
@@ -51,6 +51,8 @@ try:
     print(f"압축 파일을 성공적으로 해제하였습니다. 경로: {extracted_folder}")
 except Exception as e:
     print(f"압축 파일 해제 중 오류가 발생하였습니다: {e}")
+
+
 
 # make 'output.json'
 import csv
