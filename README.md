@@ -35,6 +35,7 @@
 * You could get 'output.json' file
 * Get down our file and run it in your '/content' directory
 ```python
+%cd /content
 !python preprocessing.py
 ```
 
@@ -84,6 +85,7 @@
 * You should put 'vicuna' to your model-name
 * output_dir name should be contained 'checkpoint-*'
 * num_train_epochs must have started from 2
+
 ```python
 !python /content/LLaVA/llava/train/train_mem.py \
     --model_name_or_path /content/LLaVA/vicuna-7b-v1.3 \
@@ -119,6 +121,8 @@
 ## 6. Inference
 
 ```python
+%cd /content
+
 # go to your output directory
 from google.colab import drive
 drive.mount('/content/drive')
@@ -128,6 +132,7 @@ drive.mount('/content/drive')
   * May be you might get a difference whether the name contains 'llava' or not
 
 ```python
+%cd /content/LLaVA
 !python3 /content/LLaVA/llava/eval/model_vqa.py \
     --model-path /content/drive/MyDrive/llava/checkpoint/checkpoint-1epoch \
     --model-base lmsys/vicuna-7b-v1.3 \
