@@ -89,7 +89,7 @@
 ## 5. Re-training
 * You should put 'vicuna' to your model-name
 * output_dir name should be contained **'checkpoint-*'**
-* num_train_epochs must have started from **2**
+* num_train_epochs must have started from **2** or more
 
 ```python
 !python /content/LLaVA/llava/train/train_mem.py \
