@@ -19,6 +19,7 @@
 <summary>train.csv [파일]</summary>
 <div markdown="1">
   <div>
+
  * ID : 질문 ID
  * image_id : 이미지 ID
  * question : 이미지 관련 질문
@@ -27,7 +28,6 @@
   </div>
 </div>
 </details>
-
 
 <details>
 <summary>test.csv [파일]</summary>
