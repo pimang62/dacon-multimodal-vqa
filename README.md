@@ -37,7 +37,7 @@ data
 |    └─  question : 이미지 관련 질문
 └─  sample_submission.csv
      ├─  ID : 질문 ID
-     └─  answer : 질문에 대한 답변
+     └─  *answer : 질문에 대한 답변
 ```
 
 ## 3. Setup
