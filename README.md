@@ -77,7 +77,7 @@
 ```
 
 ### Preprocessing
-* You could get 'output.json' file
+* You could get 'output.json' and 'text.json' file
 * If else, download our file and run it in your '/content' directory
 ```python
 %cd /content
