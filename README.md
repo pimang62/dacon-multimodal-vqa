@@ -6,10 +6,12 @@
 <details>
 <summary>image [폴더]</summary>
 <div markdown="1">
-
+<div>
+ 
 * train [폴더] : 107,231개 이미지
 * test [폴더] : 11,915개 이미지
 
+</div>
 </div>
 </details>
 
