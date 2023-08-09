@@ -18,12 +18,13 @@
 <details>
 <summary>train.csv [파일]</summary>
 <div markdown="1">
- 
+  <div>
  * ID : 질문 ID
  * image_id : 이미지 ID
  * question : 이미지 관련 질문
  * answer : 질문에 대한 정답
 
+  </div>
 </div>
 </details>
 
@@ -31,21 +32,25 @@
 <details>
 <summary>test.csv [파일]</summary>
 <div markdown="1">
+  <div>
 
  * ID : 질문 ID
  * image_id : 이미지 ID
  * question : 이미지 관련 질문
 
+  </div>
 </div>
 </details>
 
 <details>
 <summary>sample_submission.csv [파일] - 제출 양식</summary>
 <div markdown="1">
- 
+  <div>
+
  * ID : 질문 ID
  * answer : 질문에 대한 답변
 
+  </div>
 </div>
 </details>
 
