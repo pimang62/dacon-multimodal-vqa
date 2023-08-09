@@ -6,6 +6,7 @@
 * 서비스적으로 활용 가치가 높은 멀티모달 AI 모델 개발 및 고도화에 도전해 보세요!
 
 [주제] 이미지 기반 질의 응답 AI 모델 개발
+
 [기간] 2023.07.10. ~ 2023.08.07.
 
 [링크] https://dacon.io/competitions/official/236118/overview/description
