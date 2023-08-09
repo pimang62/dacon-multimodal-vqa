@@ -5,7 +5,7 @@
 ## 2. Data
 ## train_questionfile
 ```python
-#output.json 만들기
+
 import csv
 import json
 
