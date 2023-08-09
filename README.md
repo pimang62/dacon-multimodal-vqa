@@ -8,7 +8,7 @@
 [주제] 이미지 기반 질의 응답 AI 모델 개발
 [기간] 2023.07.10. ~ 2023.08.07.
 
-[월간 데이콘 이미지 기반 질의 응답 AI 경진대회] https://dacon.io/competitions/official/236118/overview/description
+[링크] https://dacon.io/competitions/official/236118/overview/description
 
 ## 2. Data
 <details>
