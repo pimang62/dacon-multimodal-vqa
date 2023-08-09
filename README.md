@@ -3,24 +3,41 @@
 ## 1. Introduction
 
 ## 2. Data
-* image [폴더]
-  * train [폴더] : 107,231개 이미지
-  * test [폴더] : 11,915개 이미지
+<details>
+<summary>image [폴더]</summary>
+<div markdown="1">
+* train [폴더] : 107,231개 이미지
+* test [폴더] : 11,915개 이미지
+</div>
+</details>
 
-* train.csv [파일]
-  * ID : 질문 ID
-  * image_id : 이미지 ID
-  * question : 이미지 관련 질문
-  * answer : 질문에 대한 정답
+<details>
+<summary>train.csv [파일]</summary>
+<div markdown="1">
+* ID : 질문 ID
+* image_id : 이미지 ID
+* question : 이미지 관련 질문
+* answer : 질문에 대한 정답
+</div>
+</details>
 
-* test.csv [파일] 
-  * ID : 질문 ID
-  * image_id : 이미지 ID
-  * question : 이미지 관련 질문
 
-* sample_submission.csv [파일] - 제출 양식
-  * ID : 질문 ID
-  * answer : 질문에 대한 답변
+<details>
+<summary>test.csv [파일]</summary>
+<div markdown="1">
+* ID : 질문 ID
+* image_id : 이미지 ID
+* question : 이미지 관련 질문
+</div>
+</details>
+
+<details>
+<summary>sample_submission.csv [파일] - 제출 양식</summary>
+<div markdown="1">
+ * ID : 질문 ID
+ * answer : 질문에 대한 답변
+</div>
+</details>
 
 ## 3. Setup
 * In Colab-PRO or PRO+ Users only
