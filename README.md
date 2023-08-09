@@ -3,7 +3,67 @@
 ## 1. Introduction
 
 ## 2. Data
+## train_questionfile
+```python
+#output.json 만들기
+import csv
+import json
 
+with open('csv path', 'r') as f:
+    reader = csv.reader(f)
+    next(reader)
+    data = list(reader)
+
+json_data = []
+for row in data:
+    id, image_id, question, answer = row
+    json_data.append({
+        "id": id,
+        "image": "/content/image/train/" + image_id + ".jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image>\n" + question
+            },
+            {
+                "from": "gpt",
+                "value": answer
+            }
+        ]
+    })
+
+with open('output path', 'w') as f:
+    json.dump(json_data, f, indent=4)
+```
+## Inference_questionfile
+```python
+import csv
+import json
+
+with open('/content/test.csv', 'r') as f:
+    reader = csv.reader(f)
+    next(reader)
+    data = list(reader)
+
+json_data = []
+for row in data:
+    id, image_id, question = row
+    json_data.append({
+        "id": id,
+        "image": "/content/image/test/" + image_id + ".jpg",
+        "text": question
+        })
+
+# jsonl file path
+jsonl_output_file = "/content/test.jsonl"
+
+# JSON to JSONL 
+with open(jsonl_output_file, "w") as file:
+    for obj in json_data:
+        # write file (JSON +(\n)).
+        json.dump(obj, file)
+        file.write("\n")
+```   
 ## 3. Setup
 * In Colab-PRO or PRO+ Users only
 * Set up for sure GPU A100
@@ -122,36 +182,8 @@
     --lazy_preprocess True \
     --report_to wandb
 ```
-## 6. Inference_questionfile
-```python
-import csv
-import json
-
-with open('/content/test.csv', 'r') as f:
-    reader = csv.reader(f)
-    next(reader)
-    data = list(reader)
-
-json_data = []
-for row in data:
-    id, image_id, question = row
-    json_data.append({
-        "id": id,
-        "image": "/content/image/test/" + image_id + ".jpg",
-        "text": question
-        })
-
-# jsonl file path
-jsonl_output_file = "/content/test.jsonl"
-
-# JSON to JSONL 
-with open(jsonl_output_file, "w") as file:
-    for obj in json_data:
-        # write file (JSON +(\n)).
-        json.dump(obj, file)
-        file.write("\n")
-```     
-## 7. Inference
+  
+## 6. Inference
 
 ```python
 %cd /content
@@ -177,7 +209,7 @@ drive.mount('/content/drive')
     /content/result.jsonl \
 ```
 
-## 8. Submission
+## 7. Submission
 ```python
 %cd /content/dacon-multimodal-vqa
 !python submission.py
