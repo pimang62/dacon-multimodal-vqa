@@ -3,67 +3,25 @@
 ## 1. Introduction
 
 ## 2. Data
-## train_questionfile
-```python
+* image [폴더]
+  * train [폴더] : 107,231개 이미지
+  * test [폴더] : 11,915개 이미지
 
-import csv
-import json
+* train.csv [파일]
+  * ID : 질문 ID
+  * image_id : 이미지 ID
+  * question : 이미지 관련 질문
+  * answer : 질문에 대한 정답
 
-with open('csv path', 'r') as f:
-    reader = csv.reader(f)
-    next(reader)
-    data = list(reader)
+* test.csv [파일] 
+  * ID : 질문 ID
+  * image_id : 이미지 ID
+  * question : 이미지 관련 질문
 
-json_data = []
-for row in data:
-    id, image_id, question, answer = row
-    json_data.append({
-        "id": id,
-        "image": "/content/image/train/" + image_id + ".jpg",
-        "conversations": [
-            {
-                "from": "human",
-                "value": "<image>\n" + question
-            },
-            {
-                "from": "gpt",
-                "value": answer
-            }
-        ]
-    })
+* sample_submission.csv [파일] - 제출 양식
+  * ID : 질문 ID
+  * answer : 질문에 대한 답변
 
-with open('output path', 'w') as f:
-    json.dump(json_data, f, indent=4)
-```
-## Inference_questionfile
-```python
-import csv
-import json
-
-with open('/content/test.csv', 'r') as f:
-    reader = csv.reader(f)
-    next(reader)
-    data = list(reader)
-
-json_data = []
-for row in data:
-    id, image_id, question = row
-    json_data.append({
-        "id": id,
-        "image": "/content/image/test/" + image_id + ".jpg",
-        "text": question
-        })
-
-# jsonl file path
-jsonl_output_file = "/content/test.jsonl"
-
-# JSON to JSONL 
-with open(jsonl_output_file, "w") as file:
-    for obj in json_data:
-        # write file (JSON +(\n)).
-        json.dump(obj, file)
-        file.write("\n")
-```   
 ## 3. Setup
 * In Colab-PRO or PRO+ Users only
 * Set up for sure GPU A100
