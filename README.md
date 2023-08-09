@@ -42,7 +42,7 @@
 <div markdown="1">
  
  * ID : 질문 ID
- * answer : 질문에 대한 답변
+ * answer : 질문에 대한 답변
 
 </div>
 </details>
