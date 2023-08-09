@@ -6,8 +6,8 @@
 <details>
 <summary>image [폴더]</summary>
 <div markdown="1">
-  * train [폴더] : 107,231개 이미지
-  * test [폴더] : 11,915개 이미지
+train [폴더] : 107,231개 이미지 \
+test [폴더] : 11,915개 이미지
 </div>
 </details>
 
