@@ -88,7 +88,7 @@
 
 ## 5. Re-training
 * You should put 'vicuna' to your model-name
-* output_dir name should be contained **'checkpoint-*'**
+* output_dir folder should be contained **'checkpoint-*'**
 * num_train_epochs must have started from **2** or more
 
 ```python
@@ -122,8 +122,36 @@
     --lazy_preprocess True \
     --report_to wandb
 ```
+## 6. Inference_questionfile
+```python
+import csv
+import json
 
-## 6. Inference
+with open('/content/test.csv', 'r') as f:
+    reader = csv.reader(f)
+    next(reader)
+    data = list(reader)
+
+json_data = []
+for row in data:
+    id, image_id, question = row
+    json_data.append({
+        "id": id,
+        "image": "/content/image/test/" + image_id + ".jpg",
+        "text": question
+        })
+
+# jsonl file path
+jsonl_output_file = "/content/test.jsonl"
+
+# JSON to JSONL 
+with open(jsonl_output_file, "w") as file:
+    for obj in json_data:
+        # write file (JSON +(\n)).
+        json.dump(obj, file)
+        file.write("\n")
+```     
+## 7. Inference
 
 ```python
 %cd /content
@@ -149,7 +177,7 @@ drive.mount('/content/drive')
     /content/result.jsonl \
 ```
 
-## 7. Submission
+## 8. Submission
 ```python
 %cd /content/dacon-multimodal-vqa
 !python submission.py
