@@ -1,7 +1,7 @@
 # 월간 데이콘 이미지 기반 질의 응답 AI 경진대회
 ## 결과
 * **★ PUBLIC 3위 / PRIVATE 2위 ★** 
-* [LLaVA 모델] (https://github.com/haotian-liu/LLaVA) from pretrained train data 
+* [LLaVA 모델](https://github.com/haotian-liu/LLaVA) from pretrained train data 
 
 ## 1. Introduction
 **[배경]**
