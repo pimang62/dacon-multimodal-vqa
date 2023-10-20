@@ -48,7 +48,7 @@ with open('output.json', 'w') as f:
 
 # ----------------------------------------------------------------
 # make 'test.json'
-with open('/content/test.csv', 'r') as f:
+with open('/content/dacon-multimodal-vqa/test.csv', 'r') as f:
     reader = csv.reader(f)
     next(reader)
     data = list(reader)
@@ -58,12 +58,12 @@ for row in data:
     id, image_id, question = row
     json_data.append({
         "id": id,
-        "image": "/content/image/test/" + image_id + ".jpg",
+        "image": "/content/dacon-multimodal-vqa/image/test/" + image_id + ".jpg",
         "text": question
         })
 
 # jsonl file path
-jsonl_output_file = "/content/test.jsonl"
+jsonl_output_file = "/content/dacon-multimodal-vqa/test.jsonl"
 
 # JSON to JSONL 
 with open(jsonl_output_file, "w") as file:
