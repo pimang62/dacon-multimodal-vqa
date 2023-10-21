@@ -89,6 +89,8 @@ data
 !wandb login
 ```
 
+* Edit point
+  * /content/LLaVA/llava/train/train.py in 928 line, resume_from_checkpoint=**False**
 * Train
 ```python
 !python /content/LLaVA/llava/train/train_mem.py \
