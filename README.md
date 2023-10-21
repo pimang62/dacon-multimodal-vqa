@@ -89,9 +89,8 @@ data
 !wandb login
 ```
 
-* Edit point
-  * /content/LLaVA/llava/train/train.py in 928 line, resume_from_checkpoint=**False**
 * Train
+  * /content/LLaVA/llava/train/train.py in 928 line, resume_from_checkpoint=**False**
 ```python
 !python /content/LLaVA/llava/train/train_mem.py \
     --model_name_or_path /content/LLaVA/vicuna-7b-v1.3 \
